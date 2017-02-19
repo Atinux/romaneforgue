@@ -34,6 +34,8 @@
   p
   {
     padding-bottom: 30px;
+    text-align: justify;
+    line-height: 26px;
   }
   img
   {
