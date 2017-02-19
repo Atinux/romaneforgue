@@ -5,6 +5,7 @@
   "author": "Alexandre Chopin <wikeo65@gmail.com>",
   "private": true,
   "dependencies": {
+    "axios": "^0.15.3",
     "nuxt": "latest",
     "vue-flexboxgrid": "latest"
   },

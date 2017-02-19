@@ -5,17 +5,22 @@
         <row center-xs>
           <column xs="11">
             <h2 class="Footer__Title">Me Contacter</h2>
-            <form class="Footer__Form" method="POST" action="http://formspree.io/romane.forgue@hotmail.fr">
+            <div class="Footer__Success" v-if="status === 2">
+              <div class="Footer__Success__Close" @click="status = 0">X</div>
+              Message envoyé avec succès.
+            </div>
+            <form class="Footer__Form">
               <div class="Footer__Half">
-                <input class="Footer__Field" type="text" name="title" placeholder="Titre"/>
+                <input class="Footer__Field" type="text" name="title" placeholder="Titre" v-model="form.title"/>
               </div>
               <div class="Footer__Half">
-                <input class="Footer__Field" type="email" name="email" placeholder="Email"/>
+                <input class="Footer__Field" type="email" name="email" placeholder="Email" v-model="form.email"/>
               </div>
               <div class="Footer__Full">
-                <textarea class="Footer__Field" name="message" placeholder="Message" rows="6"></textarea>
+                <textarea class="Footer__Field" name="message" placeholder="Message" rows="6" v-model="form.message"></textarea>
               </div>
-              <button class="Footer__Submit" type="submit">Envoyer</button>
+              <button class="Footer__Submit" type="button" v-if="status === 1">Veuillez patienter</button>
+              <button class="Footer__Submit" type="button" v-else @click="send">Envoyer</button>
             </form>
           </column>
         </row>
@@ -33,12 +38,67 @@
   </footer>
 </template>
 
+<script>
+import axios from 'axios'
+
+export default {
+  data () {
+    return {
+      status: 0,
+      form: { title: '', email: '', message: '' }
+    }
+  },
+  methods: {
+    send () {
+      if (this.form.title.length && this.form.email.length && this.form.message.length) {
+        this.status = 1
+        axios.post('http://formspree.io/romane.forgue@hotmail.fr', this.form).then((res) => {
+          this.status = 2
+          this.form.title = ''
+          this.form.email = ''
+          this.form.message = ''
+        })
+      }
+    }
+  }
+}
+</script>
+
 <style lang="scss">
 .Footer
 {
   text-align: center;
   padding: 50px 0;
   background-color: #fff;
+  &__Success
+  {
+    color: #fff;
+    background-color: green;
+    border-radius: 5px;
+    padding: 20px 15px;
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-size: 18px;
+    &__Close
+    {
+      cursor: pointer;
+      color: #fff;
+      border: 1px solid #fff;
+      width: 24px;
+      height: 24px;
+      float: right;
+      border-radius: 50%;
+      text-align: center;
+      font-weight: 300;
+      line-height: 22px;
+      background-color: transparent;
+      &:hover
+      {
+        color: green;
+        background-color: #fff;
+      }
+    }
+  }
   &__Title
   {
     font-weight: 300;
