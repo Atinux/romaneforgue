@@ -58,7 +58,7 @@ export default {
       width: 100%;
       height: 100%;
       z-index: 1;
-      background-color: rgba(255, 255, 255, 0.75);
+      background-color: rgba(0, 0, 0, 0.5);
     }
     img
     {
@@ -95,11 +95,11 @@ export default {
     }
     h2
     {
-      color: #000;
+      color: #fff;
       font-size: 26px;
       text-transform: uppercase;
       letter-spacing: 1px;
-      font-weight: 400;
+      font-weight: 300;
       margin: 0;
     }
   }
