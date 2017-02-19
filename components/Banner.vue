@@ -3,7 +3,7 @@
     <container>
       <row center-xs>
         <column xs="11">
-          <img class="Banner__Logo" src="../assets/images/logofr.png" alt="Logo RF">
+          <img class="Banner__Logo" src="../assets/images/logo.png" alt="Logo RF">
           <h1 class="Banner__Title">
             Forgue <span>Romane</span>
           </h1>
