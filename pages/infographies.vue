@@ -4,7 +4,7 @@
     <row center-xs middle-xs between-xs>
       <column>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Découvrez ci-dessous quelques travaux d’infographies que j’ai réalisé au cours de mes études. Le but ici est de traduire des informations sous forme graphique afin de faire comprendre le sujet traité par l’image. Pour ces créations j’ai utilisé Illustrator et le style graphique que j’ai choisi est essentiellement du flat design.
         </p>
       </column>
       <column>
@@ -25,7 +25,7 @@ export default {
     return {
       title: 'Romane Forgue - Infographies',
       meta: [
-        { hid: 'description', name: 'description', content: '' }
+        { hid: 'description', name: 'description', content: 'Découvrez quelques travaux d’infographies que j’ai réalisé au cours de mes études.' }
       ]
     }
   },

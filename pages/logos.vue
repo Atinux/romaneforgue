@@ -4,7 +4,7 @@
     <row center-xs between-xs>
       <column>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Cette page comprend des réalisations personnelles de logos, mais aussi des logos que j’ai pu réaliser pour des concours, des professionnels ou des projets effectués dans le cadre de mes études. Vous trouverez aussi différentes déclinaisons de logos et des simulations sur différents supports. Pour toutes ces réalisations j’ai travaillé sur le logiciel Illustrator.
         </p>
       </column>
       <column>
@@ -76,7 +76,7 @@ export default {
     return {
       title: 'Romane Forgue - Logos',
       meta: [
-        { hid: 'description', name: 'description', content: '' }
+        { hid: 'description', name: 'description', content: 'Cette page comprend des réalisations personnelles de logos, mais aussi des logos que j’ai pu réaliser pour des concours, des professionnels ou des projets effectués dans le cadre de mes études.' }
       ]
     }
   },

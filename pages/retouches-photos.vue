@@ -4,7 +4,7 @@
     <row center-xs between-xs>
       <column>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Les retouches photos que vous trouverez ci-dessous sont des créations réalisées à titre personnel que j’ai travaillé sur Photoshop. Vous trouverez le avant-après afin de remarquer les modifications qui ont été apportées sur certaines photos. Mon but est de sublimer les photos, j’aime jouer sur la saturation et les contrastes pour donner un effet de photo d’art.
         </p>
       </column>
       <column>
@@ -47,7 +47,7 @@ export default {
     return {
       title: 'Romane Forgue - Retouches Photos',
       meta: [
-        { hid: 'description', name: 'description', content: '' }
+        { hid: 'description', name: 'description', content: 'Les retouches photos que vous trouverez sont des créations réalisées à titre personnel que j’ai travaillé sur Photoshop.' }
       ]
     }
   },
