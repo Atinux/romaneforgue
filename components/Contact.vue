@@ -102,7 +102,7 @@ export default {
   &__Title
   {
     font-weight: 300;
-    font-size: 36px;
+    font-size: 40px;
     padding-bottom: 30px;
   }
   &__Form

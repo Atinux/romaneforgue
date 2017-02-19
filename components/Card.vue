@@ -29,7 +29,7 @@ export default {
   {
     .Card__Image:before
     {
-      transition: background-color 0.5s ease;
+      transition: background-color 1s ease;
       background-color: rgba(0, 0, 0, 0);
     }
     h2
@@ -39,7 +39,7 @@ export default {
   }
   &__Image
   {
-    transition: transform 0.5s ease;
+    transition: transform 1s ease;
     position: relative;
     display: block;
     width: 100%;
@@ -49,7 +49,7 @@ export default {
     &:before
     {
       pointer-events: none;
-      transition: background-color 0.5s ease;
+      transition: background-color 1s ease;
       content: '';
       display: block;
       position: absolute;
@@ -58,7 +58,7 @@ export default {
       width: 100%;
       height: 100%;
       z-index: 1;
-      background-color: rgba(0, 0, 0, 0.75);
+      background-color: rgba(255, 255, 255, 0.75);
     }
     img
     {
@@ -72,7 +72,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.5s ease, transform 0.5s ease;
+    transition: background-color 1s ease, transform 1s ease;
     position: absolute;
     top: 0;
     left: 0;
@@ -95,11 +95,11 @@ export default {
     }
     h2
     {
-      font-size: 28px;
+      color: #000;
+      font-size: 26px;
       text-transform: uppercase;
-      text-shadow: 1px 1px #000;
-      letter-spacing: 2px;
-      font-weight: 300;
+      letter-spacing: 1px;
+      font-weight: 400;
       margin: 0;
     }
   }

@@ -4,7 +4,7 @@
     <row center-xs between-xs>
       <column>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Voici ci-dessous un de mes projets web design, vous trouverez les premières maquettes du site. Dumbble est un projet de site de jeux que je réalise en collaboration avec un ami développeur.
         </p>
       </column>
       <column>
@@ -50,7 +50,7 @@ export default {
     return {
       title: 'Romane Forgue - Webdesign',
       meta: [
-        { hid: 'description', name: 'description', content: '' }
+        { hid: 'description', name: 'description', content: 'umbble est un projet de site de jeux que je réalise en collaboration avec un ami développeur.' }
       ]
     }
   },
