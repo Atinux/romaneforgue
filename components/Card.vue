@@ -1,5 +1,5 @@
 <template>
-  <article class="Card" :style="style">
+  <article class="Card">
     <span class="Card__Image">
       <slot name="image"/>
     </span>
@@ -16,13 +16,6 @@ export default {
       type: String,
       required: true
     }
-  },
-  computed: {
-    style () {
-      return {
-        backgroundImage: "url('" + this.image + "')"
-      }
-    }
   }
 }
 </script>
@@ -30,8 +23,6 @@ export default {
 <style lang="scss" scoped>
 .Card
 {
-  // height: 300px;
-  // transition: transform 0.5s ease, opacity 0.5s ease;
   position: relative;
   width: 100%;
   &:hover
